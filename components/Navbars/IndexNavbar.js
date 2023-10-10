@@ -11,6 +11,7 @@ export default function Navbar(props) {
       <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            {/* PERKATAAN PADA HEADER WEBSITE */}
             <Link href="/">
               <a
                 className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
@@ -19,6 +20,7 @@ export default function Navbar(props) {
                 Notus NextJS
               </a>
             </Link>
+            {/* BURGER BUTTON FOR MOBILE VIEW */}
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
@@ -27,6 +29,7 @@ export default function Navbar(props) {
               <i className="fas fa-bars"></i>
             </button>
           </div>
+          {/* CONTROLLER BAGI BURGER BUTTON */}
           <div
             className={
               "lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none" +
@@ -34,6 +37,7 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
+            {/* LINKED ICON + PERKATAAN */}
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               <li className="flex items-center">
                 <a
@@ -45,10 +49,13 @@ export default function Navbar(props) {
                 </a>
               </li>
             </ul>
+            
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              {/* HEADER DROPDOWN */}
               <li className="flex items-center">
                 <IndexDropdown />
               </li>
+              {/* LINKED SOCIAL MEDIA*/}
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -59,7 +66,6 @@ export default function Navbar(props) {
                   <span className="lg:hidden inline-block ml-2">Share</span>
                 </a>
               </li>
-
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -70,7 +76,6 @@ export default function Navbar(props) {
                   <span className="lg:hidden inline-block ml-2">Tweet</span>
                 </a>
               </li>
-
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -82,6 +87,7 @@ export default function Navbar(props) {
                 </a>
               </li>
 
+              {/* BUTTON DI HEADER */}
               <li className="flex items-center">
                 <button
                   className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"

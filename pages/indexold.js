@@ -10,13 +10,12 @@ export default function Index() {
     <>
       {/* NAVIGATION BAR */}
       <IndexNavbar fixed />
-      
       <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                Notus NextJS2 - A beautiful extension for Tailwind CSS.
+                Notus NextJS - A beautiful extension for Tailwind CSS.
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                 Notus NextJS is Free and Open Source. It does not change any of
@@ -32,8 +31,6 @@ export default function Index() {
                 . It features multiple HTML elements and it comes with dynamic
                 components for ReactJS, Vue and Angular.
               </p>
-
-              {/* BUTTON IN PAGE */}
               <div className="mt-12">
                 <a
                   href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index"
@@ -53,7 +50,6 @@ export default function Index() {
             </div>
           </div>
         </div>
-        {/* BANNER IMAGE */}
         <img
           className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
           src="/img/pattern_nextjs.png"
